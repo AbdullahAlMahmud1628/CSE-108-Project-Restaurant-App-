@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.customer.ShowCartController">
+   <children>
+      <TableView fx:id="tableView" layoutX="130.0" layoutY="144.0" prefHeight="424.0" prefWidth="653.0">
+        <columns>
+          <TableColumn fx:id="foodColumn" prefWidth="166.20001220703125" text="Food" />
+          <TableColumn fx:id="restaurantColumn" minWidth="0.0" prefWidth="94.59999084472656" text="Restaurant" />
+            <TableColumn fx:id="categoryColumn" prefWidth="192.39999389648438" text="Category" />
+            <TableColumn fx:id="priceColumn" prefWidth="88.5999755859375" text="Price" />
+            <TableColumn fx:id="selectColumn" prefWidth="107.20001220703125" text="Remove" />
+        </columns>
+      </TableView>
+      <Button fx:id="orderButton" layoutX="648.0" layoutY="75.0" mnemonicParsing="false" onAction="#orderAction" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #4dabf5;" text="Place Order">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Button fx:id="removeFromCart" layoutX="467.0" layoutY="75.0" mnemonicParsing="false" onAction="#removeFromCartAction" style="-fx-background-color: #4dabf5;" text="Remove From Cart">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Label fx:id="totalField" layoutX="141.0" layoutY="80.0" prefHeight="18.0" prefWidth="159.0" textFill="#3205f7">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="totalPrice" layoutX="141.0" layoutY="118.0" prefHeight="18.0" prefWidth="202.0" textFill="#3205f7">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Pane layoutY="1.0" prefHeight="600.0" prefWidth="130.0" style="-fx-background-color: #1769aa;">
+         <children>
+            <Button fx:id="back" layoutY="14.0" mnemonicParsing="false" onAction="#backAction" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: #4dabf5;" text="Back">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

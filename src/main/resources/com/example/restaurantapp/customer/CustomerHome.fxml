@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.customer.CustomerHomeController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="145.0" style="-fx-background-color: #1769aa;">
+         <children>
+            <Button fx:id="myOrders" mnemonicParsing="false" onAction="#setMyOrders" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #4dabf5;" text="My Orders" textFill="#180101">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOut" layoutY="198.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #4dabf5;" text="Log out" textFill="#1b0101">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <Button fx:id="myCart" layoutY="50.0" mnemonicParsing="false" onAction="#setCart" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #4dabf5;" text="My cart" textFill="#230101">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <Button fx:id="order" layoutX="-1.0" layoutY="100.0" mnemonicParsing="false" onAction="#setOrder" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #4dabf5;" text="Search Food" textFill="#010818">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchRestaurant" layoutX="1.0" layoutY="149.0" mnemonicParsing="false" onAction="#searchResAction" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #4dabf5;" text="Search Restaurant" textFill="#180101">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Pane layoutX="146.0" prefHeight="225.0" prefWidth="654.0" style="-fx-background-color: grey;">
+         <children>
+            <Label fx:id="welcome" layoutX="74.0" layoutY="14.0" prefHeight="64.0" prefWidth="219.0" textFill="#05f71e">
+               <font>
+                  <Font size="48.0" />
+               </font></Label>
+            <Label fx:id="name" layoutX="293.0" layoutY="57.0" prefHeight="84.0" prefWidth="376.0" textFill="#05f71e">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font></Label>
+         </children></Pane>
+      <ImageView fitHeight="374.0" fitWidth="654.0" layoutX="146.0" layoutY="225.0" pickOnBounds="true">
+         <image>
+            <Image url="@chicken.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

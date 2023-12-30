@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.customer.OrderFoodController">
+   <children>
+      <TextField fx:id="resName" layoutX="260.0" layoutY="79.0" prefHeight="26.0" prefWidth="151.0" promptText="Restaurant name" visible="false" />
+      <TextField fx:id="searchBar" layoutX="260.0" layoutY="17.0" prefHeight="15.0" prefWidth="351.0" promptText="search food" />
+      <ChoiceBox fx:id="choiceBox" layoutX="623.0" layoutY="17.0" onAction="#setRestaurantBox" prefWidth="150.0" style="-fx-background-color: #4dabf5;" />
+      <TableView fx:id="tableView" layoutX="108.0" layoutY="183.0" prefHeight="404.0" prefWidth="684.0">
+        <columns>
+          <TableColumn fx:id="foodName" prefWidth="176.99999237060547" text="Food" />
+            <TableColumn fx:id="restaurantName" prefWidth="93.60000610351562" text="Restaurant" />
+          <TableColumn fx:id="categoryName" prefWidth="188.60003662109375" text="Category" />
+            <TableColumn fx:id="price" prefWidth="120.20001220703125" text="Price" />
+            <TableColumn fx:id="addToCartColumn" prefWidth="97.20001220703125" text="Add" />
+        </columns>
+      </TableView>
+      <Label layoutX="108.0" layoutY="107.0" prefHeight="26.0" prefWidth="151.0" text="  Filter by price range :" textFill="#4807f0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button fx:id="search" layoutX="473.0" layoutY="138.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #4dabf5;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <TextField fx:id="lowerRangeBox" layoutX="108.0" layoutY="137.0" promptText="Lower Range" />
+      <TextField fx:id="upperRangeBox" layoutX="280.0" layoutY="137.0" promptText="Upper Range" />
+      <Label fx:id="resAlert" layoutX="430.0" layoutY="83.0" prefHeight="18.0" prefWidth="151.0" textFill="#fa0404" />
+      <Label fx:id="searchBarAlert" layoutX="260.0" layoutY="46.0" prefHeight="18.0" prefWidth="351.0" textFill="#f40303" />
+      <Button fx:id="addToCart" layoutX="642.0" layoutY="138.0" mnemonicParsing="false" onAction="#addToCartAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #4dabf5;" text="Add to cart">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label fx:id="optionsAlert" layoutX="623.0" layoutY="46.0" prefHeight="18.0" prefWidth="150.0" textFill="#fa0303" />
+      <Label fx:id="rangeAlert" layoutX="108.0" layoutY="165.0" prefHeight="18.0" prefWidth="322.0" textFill="#fc0303" />
+      <Label fx:id="searchAlert" layoutX="473.0" layoutY="165.0" prefHeight="18.0" prefWidth="142.0" textFill="#fa0202" />
+      <Label fx:id="addAlert" layoutX="642.0" layoutY="165.0" prefHeight="18.0" prefWidth="150.0" textFill="#fa0202" />
+      <Button fx:id="showAll" layoutX="115.0" layoutY="17.0" mnemonicParsing="false" onAction="#setShowAll" style="-fx-background-color: #4dabf5;" text="Show All Foods">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="showCostliest" layoutX="116.0" layoutY="51.0" mnemonicParsing="false" onAction="#setCostliest" style="-fx-background-color: #4dabf5;" text="Show Costliest Foods">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Pane layoutY="1.0" prefHeight="600.0" prefWidth="109.0" style="-fx-background-color: #1769aa;">
+         <children>
+            <Button fx:id="back" layoutY="14.0" mnemonicParsing="false" onAction="#setBack" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #4dabf5;" text="Back">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="cart" layoutY="61.0" mnemonicParsing="false" onAction="#cartAction" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #4dabf5;" text="Cart">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.customer.CustomerResSearchController">
+   <children>
+      <Button fx:id="showAll" layoutX="154.0" layoutY="65.0" mnemonicParsing="false" onAction="#setShowAll" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: #2196f3;" text="Show All Restaurant">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <ChoiceBox fx:id="choiceBox" layoutX="307.0" layoutY="66.0" prefWidth="150.0" style="-fx-background-color: #2196f3;" />
+      <TextField fx:id="searchBar" layoutX="478.0" layoutY="66.0" prefHeight="26.0" prefWidth="307.0" promptText="search">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Button fx:id="search" layoutX="602.0" layoutY="142.0" mnemonicParsing="false" onAction="#setSearch" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: #2196f3;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Label fx:id="choiceAlert" layoutX="307.0" layoutY="100.0" prefHeight="18.0" prefWidth="150.0" textFill="#f71a01">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="searchAlert" layoutX="478.0" layoutY="100.0" prefHeight="18.0" prefWidth="307.0" textFill="#fa2306">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutX="140.0" layoutY="205.0" prefHeight="395.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="resName" prefWidth="128.1999969482422" text="Name" />
+          <TableColumn fx:id="resCategory" minWidth="0.0" prefWidth="107.20001220703125" text="Categories" />
+            <TableColumn fx:id="resPrice" minWidth="0.0" prefWidth="167.0" text="Price Category" />
+            <TableColumn fx:id="resScore" prefWidth="169.0" text="Rating" />
+        </columns>
+      </TableView>
+      <Label layoutX="159.0" layoutY="109.0" prefHeight="27.0" prefWidth="178.0" text="Filter by rating :" textFill="#a89c18">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="lowerRating" layoutX="159.0" layoutY="142.0" prefHeight="25.0" prefWidth="130.0" promptText="lower range of rating" />
+      <TextField fx:id="upperRating" layoutX="305.0" layoutY="142.0" promptText="upper range of rating" />
+      <Label fx:id="ratingAlert" layoutX="159.0" layoutY="175.0" prefHeight="18.0" prefWidth="296.0" textFill="#f4f41a">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Pane layoutY="-1.0" prefHeight="600.0" prefWidth="140.0" style="-fx-background-color: #1769aa;">
+         <children>
+            <Button fx:id="back" layoutY="7.0" mnemonicParsing="false" onAction="#setBack" prefHeight="47.0" prefWidth="140.0" style="-fx-background-color: #4dabf5;" text="Back">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOut" layoutY="64.0" mnemonicParsing="false" onAction="#setLogOut" prefHeight="47.0" prefWidth="140.0" style="-fx-background-color: #4dabf5;" text="Log Out">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

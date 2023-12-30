@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantapp.restaurantOwner.RestaurantHomeController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="203.0" style="-fx-background-color: #1769aa;">
+         <children>
+            <Button id="myInfo" fx:id="myInfo" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#setMyInfo" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4dabf5;" text="My Info" textFill="#363333">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="orders" layoutY="108.0" mnemonicParsing="false" onMouseClicked="#setOrders" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4dabf5;" text="Orders">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="foods" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#setFoods" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4dabf5;" text="Foods">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOut" layoutY="427.0" mnemonicParsing="false" onMouseClicked="#setLogOut" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4dabf5;" text="Logout">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="203.0" prefHeight="146.0" prefWidth="604.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="200.0" layoutY="8.0" prefHeight="81.0" prefWidth="172.0" text="Welcome" textFill="#03fa49">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="refreshOrder" layoutX="300.0" layoutY="293.0" prefHeight="70.0" prefWidth="409.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
